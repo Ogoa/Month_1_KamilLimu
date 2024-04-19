@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Month1</string>
+
+    <string name="app_title">Month 1 Recall &amp; Retrieval</string>
+    <string name="theory_route">Theory</string>
+    <string name="tell_and_show_route">Tell &amp; Show</string>
+    <string name="hands_on_route">Hands-On</string>
+    <string name="real_life_route">Real-Life</string>
+
+    <string name="back_button">Back Button</string>
+
+    <string name="big_picture">The Big Picture</string>
+    <string name="key_takeaways">Key Takeaways</string>
+    <string name="apply">How I Will Apply Them</string>
+    <string name="go_to_sessions">Go to sessions</string>
+
+    <!-- Big Picture -->
+    <string name="big_picture_body">
+        From my time at KamiLimu so far, the overall lesson I have learnt is the importance
+        of a growth mindset. Having this will enable me to keep improving myself and yearning to
+        learn more every day, while also being humble enough to be cognizant of my inadequacies.
+        This also helps me acknowledge the need for a safe space to accommodate me as well as the
+        role I play in creating one for those around me.
+    </string>
+
+    <!-- Sessions -->
+    <!-- Community Engagement Pillar -->
+    <string name="community_engagement_pillar">Community Engagement</string>
+    <string name="community_engagement_about">
+        Fostering immersion in and giving back to the local and global tech and social communities.
+    </string>
+
+    <string name="launch">Launch</string>
+    <string name="launch_takeaways">
+        Public speaking - Make a special moment for your audience when telling a story. At the
+        end, tell them how it made you feel, what it makes you think and what it made you do.
+        “Never make a point without a story and never make a story without a point.
+        KamiLimu’s journey - Dr Chao’s story of the journey she has been through over the
+        seven previous cohorts up until now showed me that resilience gives birth to good things.
+        I also noted that everything, whether good or bad, teaches you lessons and unfolds in
+        your favour.
+    </string>
+    <string name="launch_apply">
+        Even in the face of adversity, always keep trying and moving forward. Giving up may
+        rob my future self of amazing opportunities.
+        Public speaking skills may open new doors
+        for me in the professional world as well as improve my ability to communicate.
+    </string>
+
+    <string name="meet_an_alumni">Meet An Alumni</string>
+    <string name="meet_an_alumni_takeaways">
+        Juggling between KamiLimu and school during my time as a mentee is all down to being very
+        organised and intentional with how I manage my time.
+        To get the most from my time as a mentee at KamiLimu, I will have to very actively
+        participate in the activities/meetings. Putting my best foot forward is also crucial to
+        this.
+    </string>
+    <string name="meet_an_alumni_apply">
+        Making the most of the opportunities given to me will help me grow as an individual.
+        Contribute to making the environment I work in with others a safe space. This will help
+        bring out the best in everyone.
+    </string>
+
+
+    <!-- Personal Development Pillar -->
+    <string name="personal_development_pillar">Personal Development</string>
+    <string name="personal_development_about">
+        Nurturing human skills that contribute towards holistic growth.
+    </string>
+
+    <string name="how_to_learn">How To Learn</string>
+    <string name="how_to_learn_takeaways">
+        Scientific approach - Understanding the science behind how the brain works can
+        help me formulate new studying habits that will enable me to retain even more after reading.
+        Diffuse mode and Focus mode are the two states whose activities I need to alternate between,
+        to maximise the effectiveness of my study sessions and retention. Taking breaks in between
+        periods of deep focus is key to this.
+    </string>
+    <string name="how_to_learn_apply">
+        Structure the activities during my study sessions following the principles of diffuse
+        and focus modes.Make use of active recall techniques such as taking notes, reflecting on
+        what I have learnt and ensuring mastery of what I have learnt or what I am practising for.
+    </string>
+    
+
+    <!-- Professional Development Pillar -->
+    <string name="professional_development_pillar">Professional Development</string>
+    <string name="professional_development_about">
+        Building excellence in professional settings.
+    </string>
+    
+    <string name="resume_writing">Resume Writing</string>
+    <string name="resume_writing_takeaways">
+        Resume structure - A resume should be very brief (1 page). Your resume\'s different
+        sections and contents should be determined by the job you are applying for.
+        Quantify and qualify - When describing your roles in the capacity you held in a certain
+        professional role, always use numbers to quantify your achievements and contributions.
+        Verify that what you include is truthful.
+    </string>
+    <string name="resume_writing_apply">
+        Always doing my research of a company in which I am applying for a job. This will help me
+        tailor my resume to the particular role.
+        Keeping my resume very brief and using numbers and qualifying statements to describe
+        roles in my experience section.
+    </string>
+
+    <string name="ict_cybersecurity">ICT - Cyber security</string>
+    <string name="ict_cyber_takeaways">
+        Cybersecurity can be divided into two main factions; red-team and blue-team. As a
+        cybersecurity expert, you have to be innovative and think out of the box to be successful.
+        Every career path, more so in tech, demands life-long learning. Things are always changing
+        and you need to be flexible and ready to adapt to changes in the industry. Even with that
+        said, mastering your fundamentals is the first step to this.
+    </string>
+    <string name="ict_cyber_apply">
+        Keep a growth mentality in everything I do. This will help me bring out the best version
+        of myself by continuously learning and improving my technical skills.
+        Being a team player. This will enable me to work in harmony with my colleagues to
+        achieve greater things as well as learn new things from them.
+    </string>
+    
+
+    <!-- Innovation Pillar -->
+    <string name="innovation_pillar">Innovation</string>
+    <string name="innovation_about">
+        Growing expertise in using human centered design to build solutions that address
+        socioeconomic issues.
+    </string>
+    
+    <string name="intro_to_innovation">Intro To Innovation</string>
+    <string name="intro_to_innovation_takeaways">
+        Different factors that make up a good innovation and how to measure the impact of
+        your innovation.
+        The importance of taking time to understand the context of the environment in which your
+        product is being deployed, so that it suits the end user.
+    </string>
+    <string name="intro_to_innovation_apply">
+        When developing a product, thinking of the value it will give your customer should be the
+        main aspect guiding the process. Always put my customer first in my design process.
+        Taking time to understand the environment and context of where my product will be
+        used. Understand who my end-user is as well as differentiate between my customer and
+        end-user when designing a product.
+    </string>
+
+    <string name="innovations_in_real_life">Innovations In Real Life</string>
+    <string name="innovations_in_real_life_takeaways">TODO</string>
+    <string name="innovations_in_real_life_apply">TODO</string>
+
+</resources>
