@@ -26,6 +26,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.style.TextAlign
@@ -53,7 +54,9 @@ enum class Month1Screens(@StringRes val title: Int) {
     Theory(title = R.string.theory_route),
     TellAndShow(title = R.string.tell_and_show_route),
     HandsOn(title = R.string.hands_on_route),
-    RealLife(title = R.string.real_life_route)
+    RealLife(title = R.string.real_life_route),
+
+    Events(title = R.string.events)
 }
 
 /**
@@ -89,9 +92,11 @@ fun Month1App(
         ) {
             // Define the different routes in the NavGraph
             composable(route = Month1Screens.Theory.name) {
-                /* TODO: Theory Screen */
                 SessionScreen(
-                    pillarList = DataSource.theorySessions
+                    pillarList = DataSource.theorySessions,
+                    pillarEvents = DataSource.theoryEvents,
+                    navController = navController,
+                    viewModel = viewModel
                 )
             }
 
@@ -104,26 +109,22 @@ fun Month1App(
             }
 
             composable(route = Month1Screens.TellAndShow.name) {
-                /* TODO: TellAndShow Screen */
                 SessionScreen(
-                    pillarList = DataSource.tellAndShowSessions
+                    pillarList = DataSource.tellAndShowSessions,
+                    pillarEvents = DataSource.tellAndShowEvents,
+                    navController = navController,
+                    viewModel = viewModel
+                )
+            }
+
+            composable(route = Month1Screens.Events.name) {
+                EventScreen(
+                    events = uiState.currentEvents,
+                    modifier = Modifier.padding(dimensionResource(id = R.dimen.medium_padding))
                 )
             }
         }
     }
-}
-
-/**
- * filterEventsByCategory discriminates between events by their category
- * @param events list of events in the app [DataSource]
- * @param category the type of event categorised according to session and pillar type
- * @return a list of [EventSessionItem] events
- */
-private fun filterEventsByCategory(
-    events: List<EventSessionItem>,
-    category: String
-): List<EventSessionItem> {
-    return events.filter { event -> event.category == category }
 }
 
 

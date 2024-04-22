@@ -112,6 +112,6 @@ fun EventScreenItemNotes(
 @Composable
 fun EventScreenPreview() {
     Month1Theme(darkTheme = false) {
-        EventScreen(events = DataSource.events)
+        EventScreen(events = DataSource.theoryEvents)
     }
 }
