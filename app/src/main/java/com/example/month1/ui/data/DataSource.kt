@@ -84,6 +84,12 @@ object DataSource {
         ),
 
         /*TODO: Add 'Innovations In Real Life'*/
+        EventSessionItem(
+            eventTitle = R.string.innovations_in_real_life,
+            eventTakeaways = R.string.innovations_in_real_life_takeaways,
+            eventApplicationNotes = R.string.innovations_in_real_life_apply,
+            category = "Innovation"
+        )
     )
 
     val complementaryEvents = listOf(

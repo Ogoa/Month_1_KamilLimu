@@ -6,6 +6,7 @@
     <string name="tell_and_show_route">Tell &amp; Show</string>
     <string name="hands_on_route">Hands-On</string>
     <string name="real_life_route">Real-Life</string>
+    <string name="events">Events</string>
 
     <string name="back_button">Back Button</string>
 
@@ -143,7 +144,20 @@
     </string>
 
     <string name="innovations_in_real_life">Innovations In Real Life</string>
-    <string name="innovations_in_real_life_takeaways">TODO</string>
-    <string name="innovations_in_real_life_apply">TODO</string>
+    <string name="innovations_in_real_life_takeaways">
+        What ClassifyMe is and the problem they aimed to solve. When coming up with their
+        innovation, they focused on developing a product that addresses the end user\'s needs. I
+        also learned about challenges when working as a team.
+        Identifying opportunities by talking to people and empathising with them to
+        discover their grievances and pain points caused by lack of or inadequacies of
+        existing solutions.
+    </string>
+    <string name="innovations_in_real_life_apply">
+        When developing a product, the end-user should be at the centre of the design
+        process for my innovation.
+        Doing my research on existing solutions in the market and identifying any possible
+        loopholes that may give birth to my innovation.
+        Getting someone with similar goals when selecting my startup partner.
+    </string>
 
 </resources>
