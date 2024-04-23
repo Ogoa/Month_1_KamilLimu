@@ -8,10 +8,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Build
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -31,6 +29,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -39,7 +38,6 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.month1.R
 import com.example.month1.ui.data.DataSource
-import com.example.month1.ui.data.EventSessionItem
 import com.example.month1.ui.model.Month1ViewModel
 import com.example.month1.ui.screens.EventScreen
 import com.example.month1.ui.screens.SessionScreen
@@ -82,7 +80,13 @@ fun Month1App(
                 navigateUp = { navController.navigateUp() }
             )
         },
-        bottomBar = { Month1AppNavigationBar(navController = navController) },
+        bottomBar = {
+            Month1AppNavigationBar(
+                navController = navController,
+                viewModel = viewModel,
+                currentScreen = currentScreen
+            )
+        }
     ) {
         // Implement a NavHost to control navigation between screens
         NavHost(
@@ -161,50 +165,6 @@ fun Month1AppBar(
 
 
 /**
- * Month1AppNavigationBar displays the bottom navigation bar
- * @param navController a NavHostController used to navigate between screens
- */
-@Composable
-fun Month1AppNavigationBar(
-    navController: NavHostController
-) {
-    NavigationBar(
-        contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Row(
-            horizontalArrangement = Arrangement.SpaceAround,
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier
-                .fillMaxWidth()
-                .align(Alignment.CenterVertically)
-        ) {
-            NavigationBarItem(
-                icon = R.drawable.baseline_lightbulb_24,
-                label = R.string.theory_route,
-                onClick = { navController.navigate(Month1Screens.Theory.name) }
-            )
-            NavigationBarItem(
-                icon = R.drawable.baseline_engineering_24,
-                label = R.string.hands_on_route,
-                onClick = { navController.navigate(Month1Screens.HandsOn.name) }
-            )
-            NavigationBarItem(
-                icon = R.drawable.baseline_insert_chart_24,
-                label = R.string.real_life_route,
-                onClick = { navController.navigate(Month1Screens.RealLife.name) }
-            )
-            NavigationBarItem(
-                icon = R.drawable.baseline_speaker_notes_24,
-                label = R.string.tell_and_show_route,
-                onClick = { navController.navigate(Month1Screens.TellAndShow.name) }
-            )
-        }
-    }
-}
-
-
-/**
  * NavigationBarItem contains a single item in the navigation bar
  * @param icon icon to be displayed
  * @param label the string to be displayed
@@ -221,7 +181,7 @@ fun NavigationBarItem(
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = modifier
+        modifier = modifier.clickable(onClick = onClick)
     ) {
         IconButton(onClick = onClick ) {
             Icon(

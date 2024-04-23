@@ -11,16 +11,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.month1.R
-import com.example.month1.ui.Month1Screens
 import com.example.month1.ui.data.DataSource
 import com.example.month1.ui.data.EventSessionItem
 import com.example.month1.ui.data.PillarItem
 import com.example.month1.ui.model.Month1ViewModel
-import com.example.month1.ui.theme.Month1Theme
 
 @Composable
 fun SessionScreen(
@@ -70,15 +66,3 @@ private fun filterEventsByCategory(
 ): List<EventSessionItem> {
     return events.filter { event -> event.category == category }
 }
-
-
-//@Preview(showBackground = true)
-//@Composable
-//fun SessionScreenPreview() {
-//    Month1Theme {
-//        SessionScreen(
-//            pillarList = DataSource.theorySessions,
-//            pillarEvents = DataSource.tellAndShowEvents
-//        )
-//    }
-//}

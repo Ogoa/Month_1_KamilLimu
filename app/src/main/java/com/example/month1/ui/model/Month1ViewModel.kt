@@ -29,4 +29,16 @@ class Month1ViewModel : ViewModel() {
             )
         }
     }
+
+    /**
+     * Updates the index of the current selected icon in the Navigation Bar
+     * @param index index of the current selected icon
+     */
+    fun updateSelectedIcon(icon: Month1Screens) {
+        _uiState.update { currentState ->
+            currentState.copy(
+                currentSelectedNavBarIcon = icon
+            )
+        }
+    }
 }
